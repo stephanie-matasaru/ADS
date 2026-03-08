@@ -1,0 +1,27 @@
+How to Run
+Place all files (Main.cpp, RBNode.h, IODialog.h) in one folder.
+
+Open your terminal and cd into that folder.
+
+Compile the program by running:
+g++ Main.cpp -o RBTree
+
+Execute the program:
+
+Mac/Linux: ./RBTree
+
+Windows: RBTree.exe
+
+How to use
+Menu: Once the program starts, you will see a list of numbered options (1–13).
+
+Input: Type the number of the operation you want to perform and press Enter.
+
+Adding Nodes: Choose option 1, then type your numbers separated by spaces (e.g., 10 5 15) and press Enter.
+
+Project Files
+Main.cpp: Runs the menu loop.
+
+RBNode.h: Contains all the Red-Black Tree math, logic, and data structures.
+
+IODialog.h: Manages all the text prompts you see on the screen.
