@@ -17,8 +17,7 @@ Maintains a live leaderboard where players can gain and lose points.
 - **Update score** — enter a player name and a delta (positive or negative)
 - **Remove player** — removes a player from the leaderboard
 - **Top k players** — shows the k highest scoring players in order
-- **Save to file** — saves the current leaderboard to a file (e.g. `leaderboard.txt`)
-- **Load from file** — loads a previously saved leaderboard from a file
+- **Exit** — exit
 
 ## Median Finder
 
@@ -28,8 +27,7 @@ If the count is even, the lower median is returned.
 - **Add number** — inserts a number into the stream
 - **Remove number** — removes one occurrence of a number
 - **Get median** — prints the current median
-- **Save to file** — saves all current numbers to a file (e.g. `median.txt`)
-- **Load from file** — loads a previously saved set of numbers from a file
+- **Exit** — exit
 
 ## Data files
 
