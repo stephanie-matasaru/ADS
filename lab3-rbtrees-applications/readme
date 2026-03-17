@@ -1,0 +1,58 @@
+# Lab 3 - RB Trees Applications
+
+Two applications (Dynamic Leaderboard and Dynamic Median) built on top of a Red-Black Tree implementation.
+
+## How to compile and run
+
+bash
+g++ -o app Main.cpp
+./app
+
+
+## Leaderboard
+
+Maintains a live leaderboard where players can gain and lose points.
+
+- **Add player** — enter a name and a starting score
+- **Update score** — enter a player name and a delta (positive or negative)
+- **Remove player** — removes a player from the leaderboard
+- **Top k players** — shows the k highest scoring players in order
+- **Save to file** — saves the current leaderboard to a file (e.g. `leaderboard.txt`)
+- **Load from file** — loads a previously saved leaderboard from a file
+
+## Median Finder
+
+Tracks a stream of numbers and reports the median at any point.
+If the count is even, the lower median is returned.
+
+- **Add number** — inserts a number into the stream
+- **Remove number** — removes one occurrence of a number
+- **Get median** — prints the current median
+- **Save to file** — saves all current numbers to a file (e.g. `median.txt`)
+- **Load from file** — loads a previously saved set of numbers from a file
+
+## Data files
+
+The program automatically loads and saves data from these files in the same folder:
+
+- `leaderboard.txt` — stores player names and scores
+- `median.txt` — stores the numbers in the stream
+
+Both files are created automatically on first exit. If they are missing the program starts with empty data.
+
+## File format
+
+Leaderboard file — one player per line:
+```
+Alice 150
+Bob 140
+Carol 90
+```
+
+Median file — one number per line:
+```
+2
+5
+7
+10
+```
