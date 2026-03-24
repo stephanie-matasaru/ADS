@@ -1,0 +1,25 @@
+# Lab 4 - B-Tree implementation 
+
+## How to compile and run
+
+```bash
+g++ -std=c++17 -o app Main.cpp
+./app
+```
+
+## Menu
+
+On startup the program asks for the minimum degree `t` (must be >= 2).
+This determines the node capacity: each node holds between `t-1` and `2t-1` keys,
+and between `t` and `2t` children.
+
+- **Insert key** — inserts a single integer into the tree. If the root is full it splits first and the tree grows in height.
+- **Insert multiple keys** — inserts several space-separated keys in one go.
+- **Delete key** — removes a key from the tree. Handles all CLRS deletion cases: direct leaf removal, replacement with predecessor/successor, and merging or borrowing from siblings to maintain the B-Tree invariants.
+- **Search key** — checks whether a key exists in the tree.
+- **Print tree** — displays the tree level by level (BFS), showing the keys stored in each node.
+- **In-order traversal** — walks the tree in order and prints all keys sorted in ascending order.
+- **Stats** — shows the total number of keys, the tree height, the minimum and maximum key, and the current degree.
+- **Clear tree** — removes all keys and resets the tree.
+- **Load demo data** — inserts 20 preset keys so you can explore the structure right away.
+- **Exit** — exits the program.
