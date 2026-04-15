@@ -1,0 +1,19 @@
+#Binomial Heaps implementation
+
+##How to compile and run
+
+bash
+g++ -o app Main.cpp
+./app
+
+
+Insert key — inserts a single integer into the heap
+Insert multiple keys — inserts several space-separated keys at once
+Find minimum — returns the smallest key without removing it
+Extract minimum — removes and returns the minimum key, then restructures the heap
+Decrease key — decreases the value of an existing node and restores the heap property
+Delete node — deletes a node by key using decrease-key followed by extract-min
+Print heap — displays each Binomial Tree in the heap with its full structure
+Print root list — shows the root list ordered by degree (B0, B1, B2, ...)
+Load demo data — inserts 12 preset keys to explore the structure right away
+Exit — exit
