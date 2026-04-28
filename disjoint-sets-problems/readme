@@ -1,0 +1,17 @@
+# Disjoint Sets Problems
+
+## How to compile and run
+g++ dsp.cpp -o dsp.exe
+./dsp.exe
+
+## Menu options
+
+Connected Components — enter number of nodes, then edges as "u v" on the same line (e.g. 0 1). Returns how many separate groups exist.
+
+Cycle Detection — enter number of nodes, then edges as "u v" on the same line. Returns whether the graph has a cycle and which edge caused it.
+
+Number of Provinces — enter matrix size n, then each row as space-separated 0s and 1s (e.g. 1 1 0). Returns how many independent city groups exist.
+
+Friend Groups — enter number of users, then friendship pairs as "u v" on the same line. Returns how many friend groups formed and who is in each one.
+
+Exit — exits the program
