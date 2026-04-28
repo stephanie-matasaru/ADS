@@ -1,7 +1,7 @@
 # Disjoint Sets Problems
 
 ## How to compile and run
-g++ dsp.cpp -o dsp.exe
+g++ -std=c++17 -o dsp dsp.cpp 
 ./dsp.exe
 
 ## Menu options
